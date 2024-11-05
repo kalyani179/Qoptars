@@ -6,12 +6,28 @@
 @tailwind utilities;
 @layer components {
     * {
-        @apply m-0 p-0 box-border font-inter bg-black text-white;
+        @apply m-0 p-0 box-border font-inter text-white;
+    }
+    .center {
+        @apply flex justify-center items-center
     }
     .navbar-route {
-        @apply tracking-widest text-lg hover:border-b hover:border-blue-400
+        @apply tracking-widest text-lg hover:border-b hover:border-primary
     }
     .btn {
-        @apply bg-white text-black font-medium p-2 px-4 rounded-full capitalize hover:bg-opacity-80;
+        @apply bg-primary font-medium p-2 px-4 rounded-full capitalize hover:bg-opacity-80;
     }
+}
+
+/* Styles for hiding scrollbar on modal content */
+
+.text-area-input::-webkit-scrollbar,.modal-content::-webkit-scrollbar,.sidenav::-webkit-scrollbar {
+    width: 0 !important;
+    display: none; /* Safari and Chrome */
+}
+.text-area-input .modal-content ,.sidenav{
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar{
+    display: none;
 }
