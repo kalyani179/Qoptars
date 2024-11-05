@@ -12,7 +12,8 @@ module.exports = {
         inter: ["'Inter'", "sans-serif"],
         gelasio: ["'Gelasio'", "serif"],
         lato: ["'Lato'", "sans-serif"],
-        merriweather: ["'Merriweather'", "serif"]
+        merriweather: ["'Merriweather'", "serif"],
+        poppins : ["'Poppins'","serif"]
       },
       colors: {
         background: "var(--background)",
