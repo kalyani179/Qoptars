@@ -10,13 +10,13 @@ const Navbar = () => {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
             
             {/* Logo */}
-            <a href="/home" className="flex items-center space-x-2">
+            <a href="/" className="flex items-center space-x-2">
                 <img src="/images/logo/logo.png" alt="Logo" className="w-32"/>
             </a>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-14 items-center">
-                <a href="/home" className="navbar-route">Home</a>
+                <a href="/" className="navbar-route">Home</a>
                 <a href="/about" className="navbar-route">About Us</a>
                 <a href="/ai-ecosystem" className="navbar-route">AI Ecosystem</a>
                 <a href="/products" className="navbar-route">Products</a>
