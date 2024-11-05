@@ -1,7 +1,9 @@
+import Navbar from "@/common/Navbar/Navbar";
+
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <p>Hello World</p>
+    <div>
+      <Navbar />
     </div>
   );
 }
