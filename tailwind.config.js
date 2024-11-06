@@ -18,7 +18,7 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#60a5fa", // blue-400 hex value
+        primary: "#2cacc4", // blue-400 hex value
       },
     },
   },

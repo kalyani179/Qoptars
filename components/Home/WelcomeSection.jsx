@@ -7,7 +7,7 @@ const WelcomeSection = () => {
             <div className="w-full max-h-screen object-cover">
                 <img src="/images/home/background.png" alt="background" />
             </div>
-        <div className="absolute inset-0 bg-black/60 max-h-screen">
+        <div className="absolute inset-0 bg-black/60 max-h-screenx">
             <Navbar />
             <div className="center flex-col sm:gap-2 md:mt-9 sm:mt-6">
                 <h1 className={`text-2xl md:text-5xl lg:text-6xl xl:text-6xl font-extrabold mt-5 md:mt-24 lg:mt-28 xl:mt-36 tracking-wider text-center`}>

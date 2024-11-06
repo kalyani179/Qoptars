@@ -7,7 +7,7 @@
 @tailwind utilities;
 @layer components {
     * {
-        @apply m-0 p-0 box-border font-poppins bg-black/70 text-white;
+        @apply m-0 p-0 box-border font-poppins bg-black/60 text-white;
     }
     .center {
         @apply flex justify-center items-center
@@ -22,7 +22,7 @@
         @apply center font-bold text-3xl
     }
     .tagline{
-        @apply center font-light mx-20 text-center
+        @apply center font-light px-32 py-6 text-center
     }
 }
 
