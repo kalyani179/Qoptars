@@ -3,7 +3,7 @@ import React from 'react'
 
 const WelcomeSection = () => {
     return (
-        <div className="bg-black">
+        <div className="bg-black/70">
             <div className="w-full max-h-screen object-cover">
                 <img src="/images/home/background.png" alt="background" />
             </div>
