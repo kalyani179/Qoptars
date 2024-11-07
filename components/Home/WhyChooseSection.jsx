@@ -28,7 +28,7 @@ const WhyChooseSection = () => {
         },
     ];
     return (
-        <div>
+        <div className="pb-20">
             <h1 className="heading">Why Choose Qoptars ?</h1>
             <p className="tagline px-60">Our advanced drone ecosystem is designed with a singular purpose which is to make aerial intelligence accessible, reliable, and effective for any mission. We bring you:</p>
             {/* Grid for features */}

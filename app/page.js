@@ -1,4 +1,5 @@
 import IndustrySolutionsSection from "@/components/Home/IndustrySolutionsSection";
+import InTheNewsSection from "@/components/Home/InTheNewsSection";
 import WelcomeSection from "@/components/Home/WelcomeSection";
 import WhyChooseSection from "@/components/Home/WhyChooseSection";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <WelcomeSection />
       <IndustrySolutionsSection />
       <WhyChooseSection />
+      <InTheNewsSection />
     </div>
   );
 }

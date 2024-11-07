@@ -13,7 +13,7 @@ const IndustrySolutionsSection = () => {
 
     return (
         <div className="flex flex-col pb-20">
-            <h1 className="heading">Transforming Industries with AI-Driven Drone Solution</h1>
+            <h1 className="heading text-4xl">Transforming Industries with AI-Driven Drone Solution</h1>
             <p className="tagline">
                 From defense and security to agriculture and environmental conservation, Qoptars’ autonomous drones and AI analytics deliver essential insights tailored to industry-specific needs. Our technology is transforming:
             </p>
