@@ -19,7 +19,7 @@
         @apply bg-primary font-medium p-2 px-4 rounded-full capitalize hover:bg-opacity-80;
     }
     .heading{
-        @apply center font-bold text-4xl text-primary
+        @apply center font-bold text-5xl text-primary
     }
     .tagline{
         @apply center font-light px-32 py-6 text-center
