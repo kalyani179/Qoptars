@@ -16,7 +16,7 @@ const IndustrySolutionsSection = () => {
     return (
         <div className="flex flex-col pb-20">
         <div className="bg-black pt-20">
-            <Zoom duration={2000}>
+            <Zoom>
                 <h1 className="heading text-4xl">Transforming Industries with AI-Driven Drone Solution</h1>
             </Zoom>  
         </div>

@@ -8,7 +8,7 @@ const Footer = () => {
         { name: "LinkedIn", icon: <FaLinkedinIn size={20} />, url: "https://linkedin.com" },
     ];
     return (
-        <footer className="p-10 rounded-xl mx-4 mt-10 shadow-gray-600">
+        <footer className="p-10 mx-4 mt-10 border-t border-white">
             <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-10 lg:space-y-0 lg:space-x-10">
                 
                 {/* Logo and Description */}
