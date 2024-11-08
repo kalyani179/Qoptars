@@ -41,7 +41,7 @@ const WhyChooseSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-8 px-20">
                     {features.map((feature, index) => (
                         <Slide key={index} direction={`${index%2==0 ? 'left' : 'right'}`}>
-                        <div className="p-6 rounded-xl shadow-md center flex-col space-y-2 border border-primary transform transition-transform hover:scale-105 duration-300 hover:shadow-inner hover:shadow-primary">
+                        <div className="p-6 rounded-xl shadow-md center flex-col space-y-2 border border-primary transform transition-transform hover:scale-105 duration-300 hover:shadow-md hover:shadow-primary">
                             <div className="mb-5 p-4 border border-white rounded-full">{feature.icon}</div>
                             <h3 className="font-semibold text-xl text-primary">{feature.title}</h3>
                             <p className="">{feature.description}</p>
