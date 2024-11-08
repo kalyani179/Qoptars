@@ -11,20 +11,20 @@ const MissionAndVision = () => {
             </div>
             <div className="flex flex-col">
                 <div className="center flex-col">
-                    <Zoom duration={1000}>
+                    <Zoom duration={1000} triggerOnce={true}>
                         <h1 className="heading text-4xl tracking-wide">Our Vision</h1>
                     </Zoom>
                         <div className="h-1 w-32 bg-white my-2"></div>
-                    <Fade duration={2000}>
+                    <Fade duration={2000} triggerOnce={true}>
                         <p className="tagline">We envision a future where drones and AI seamlessly integrate into daily operations, transforming industries with reliable, autonomous technology. By advancing aerial intelligence, Qoptars strives to create a safer, more responsive world for businesses and communities.</p>
                     </Fade>
                 </div>
                 <div className="center flex-col">
-                    <Zoom duration={1000}>
+                    <Zoom duration={1000} triggerOnce={true}>
                         <h1 className="heading text-4xl tracking-wide">Our Mission</h1>
                     </Zoom>
                         <div className="h-1 w-32 bg-white my-2"></div>
-                    <Fade duration={2000}>
+                    <Fade duration={2000} triggerOnce={true}>
                         <p className="tagline">At Qoptars, we are revolutionizing industries through autonomous drone technology and AI-driven analytics. Our mission is to empower organizations across diverse sectors with precise, real-time data to drive efficient, safe, and effective decision-making.</p>
                     </Fade>
                 </div>

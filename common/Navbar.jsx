@@ -18,9 +18,9 @@ const Navbar = () => {
             <div className="hidden md:flex space-x-14 items-center">
                 <a href="/" className="navbar-route">Home</a>
                 <a href="/about" className="navbar-route">About Us</a>
-                <a href="/ai-ecosystem" className="navbar-route">AI Ecosystem</a>
-                <a href="/products" className="navbar-route">Products</a>
-                <a href="/news" className="navbar-route">News</a>
+                <a href="/about" className="navbar-route">AI Ecosystem</a>
+                <a href="/about" className="navbar-route">Products</a>
+                <a href="/about" className="navbar-route">News</a>
                 <div>
                     <button className="btn">Contact Us</button>
                 </div>

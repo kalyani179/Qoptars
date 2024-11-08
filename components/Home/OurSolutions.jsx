@@ -29,16 +29,16 @@ const OurSolutions = () => {
     return (
         <div className="flex flex-col pb-20">
         <div className="bg-black pt-20">
-        <Zoom duration={1000}>
+        <Zoom duration={1000} triggerOnce={true}>
             <h1 className="heading">Our Solutions</h1>
         </Zoom>
-        <Slide direction="up">
+        <Slide direction="up" triggerOnce={true}>
             <p className="tagline mx-20">Explore our end-to-end ecosystem designed to overcome the limitations of traditional drone operations and bring advanced intelligence to your fingertips:</p>
         </Slide>    
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center my-10 px-10">
     {solutions.map((solution, index) => (
         <div key={index} className="border border-primary rounded-xl shadow-md transition-transform transform hover:scale-105 hover:shadow-[8px_8px_16px_rgba(44,172,196,0.5)]">
-        <Fade duration={1000}>
+        <Fade duration={1000} triggerOnce={true}>
             <img
                 src={solution.imageUrl}
                 alt={solution.title}
@@ -56,7 +56,7 @@ const OurSolutions = () => {
         </div>
             ))}
         </div>
-        <Fade duration={3000}>
+        <Fade duration={3000} triggerOnce={true}>
             <div className="center mt-12">
                 <button className="btn">
                     Discover Our Solutions

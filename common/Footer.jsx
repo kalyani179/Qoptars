@@ -50,7 +50,6 @@ const Footer = () => {
                         <li>Getting started</li>
                         <li>Network status</li>
                         <li>FAQ</li>
-                        <li>Referral program</li>
                     </ul>
                 </div>
 
