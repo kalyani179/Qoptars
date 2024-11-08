@@ -19,7 +19,7 @@
         @apply tracking-widest text-lg hover:border-b hover:border-primary
     }
     .btn {
-        @apply bg-primary font-medium p-2 px-4 rounded-full capitalize hover:bg-opacity-80;
+        @apply bg-primary font-medium p-2 px-4 rounded-full capitalize hover:bg-opacity-80 transition duration-300;
     }
     .heading{
         @apply center font-bold text-5xl text-primary
