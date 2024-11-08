@@ -5,10 +5,10 @@ import { Slide, Zoom,Fade } from "react-awesome-reveal";
 const InTheNewsSection = () => {
      // Array of image sources and alt texts for each news logo
     const newsLogos = [
-        { src: "/images/InTheNews/TimesOfIndia.png", alt: "TimesOfIndia" },
-        { src: "/images/InTheNews/ET.png", alt: "ET" },
-        { src: "/images/InTheNews/INC42.png", alt: "INC42" },
-        { src: "/images/InTheNews/dailyhunt.png", alt: "dailyhunt" }
+        { src: "/images/home/InTheNews/TimesOfIndia.png", alt: "TimesOfIndia" },
+        { src: "/images/home/InTheNews/ET.png", alt: "ET" },
+        { src: "/images/home/InTheNews/INC42.png", alt: "INC42" },
+        { src: "/images/home/InTheNews/dailyhunt.png", alt: "dailyhunt" }
     ];
     return (
         <div className="pb-32">
