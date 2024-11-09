@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react';
 
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
     return (
         <nav>
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -18,12 +18,14 @@ const Navbar = () => {
             <div className="hidden md:flex space-x-14 items-center">
                 <a href="/" className="navbar-route">Home</a>
                 <a href="/about" className="navbar-route">About Us</a>
-                <a href="/about" className="navbar-route">AI Ecosystem</a>
-                <a href="/about" className="navbar-route">Products</a>
-                <a href="/about" className="navbar-route">News</a>
+                <a href="/ai-ecosystem" className="navbar-route">AI Ecosystem</a>
+                <a href="/products" className="navbar-route">Products</a>
+                <a href="/news" className="navbar-route">News</a>
+                <a href="/contact-us">
                 <div>
                     <button className="btn">Contact Us</button>
                 </div>
+                </a>
             </div>
 
 
@@ -56,11 +58,11 @@ const Navbar = () => {
             <div className="md:hidden pt-10 flex flex-col space-y-10 absolute right-0 h-screen bg-black z-50">
             <a href="/" className="navbar-sm-route">Home</a>
             <a href="/about" className="navbar-sm-route">About Us</a>
-            <a href="/about" className="navbar-sm-route">AI Ecosystem</a>
-            <a href="/about" className="navbar-sm-route">News</a>
-            <a href="/about" className="navbar-sm-route">Products</a>
-            <a href="/about" className="navbar-sm-route">News</a>
-            <a href="/about" className="block py-2 px-4 text-gray-800 bg-white font-semibold text-center rounded-full my-2 mx-4 hover:bg-gray-200">Contact Us</a>
+            <a href="/ai-ecosystem" className="navbar-sm-route">AI Ecosystem</a>
+            <a href="/news" className="navbar-sm-route">News</a>
+            <a href="/products" className="navbar-sm-route">Products</a>
+            <a href="/news" className="navbar-sm-route">News</a>
+            <a href="/contact-us" className="block py-2 px-4 text-gray-800 bg-white font-semibold text-center rounded-full my-2 mx-4 hover:bg-gray-200">Contact Us</a>
             </div>
         )}
         </nav>
