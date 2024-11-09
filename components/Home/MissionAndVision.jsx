@@ -5,14 +5,14 @@ import { Slide, Zoom,Fade } from "react-awesome-reveal";
 const MissionAndVision = () => {
     return (
         <div className="flex flex-col pb-20">
-        <div className="bg-black pt-20 grid grid-cols-2 items-center">
-            <div className="pl-32">
+        <div className="bg-black pt-20 sm:pt-40 grid sm:grid-cols-1 grid-cols-2 sm:gap-10 items-center">
+            <div className="lg:pl-32">
                 <img src="/images/home/MissionAndVision/drone.png" alt="drone" />
             </div>
             <div className="flex flex-col">
                 <div className="center flex-col">
                     <Zoom duration={1000} triggerOnce={true}>
-                        <h1 className="heading text-4xl tracking-wide">Our Vision</h1>
+                        <h1 className="heading sm:text-3xl text-4xl tracking-wide">Our Vision</h1>
                     </Zoom>
                         <div className="h-1 w-32 bg-white my-2"></div>
                     <Fade duration={2000} triggerOnce={true}>
@@ -21,7 +21,7 @@ const MissionAndVision = () => {
                 </div>
                 <div className="center flex-col">
                     <Zoom duration={1000} triggerOnce={true}>
-                        <h1 className="heading text-4xl tracking-wide">Our Mission</h1>
+                        <h1 className="heading sm:text-3xl text-4xl tracking-wide">Our Mission</h1>
                     </Zoom>
                         <div className="h-1 w-32 bg-white my-2"></div>
                     <Fade duration={2000} triggerOnce={true}>

@@ -18,6 +18,9 @@
     .navbar-route {
         @apply tracking-widest text-lg hover:border-b hover:border-primary
     }
+    .navbar-sm-route{
+        @apply block px-10 text-white hover:bg-gray-600
+    }
     .btn {
         @apply bg-primary font-medium p-2 sm:px-2 md:px-3 lg:px-4 rounded-full capitalize hover:bg-opacity-80 transition duration-300;
     }

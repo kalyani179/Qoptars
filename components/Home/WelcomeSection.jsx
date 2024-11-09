@@ -18,12 +18,12 @@ const WelcomeSection = () => {
                     </h1>
                 </Zoom>
                 <Slide direction='up' duration={2000} triggerOnce={true}>
-                    <p className={`text-base mt-3 sm:text-xs md:text-lg lg:text-xl font-semibold tracking-widest uppercase text-center opacity-80`}>
+                    <p className={`text-base sm:text-sm mt-3 sm:text-xs md:text-lg lg:text-xl font-semibold tracking-widest uppercase text-center opacity-80`}>
                     Redefining Aerial Intelligence and Autonomous Drones with AI.
                     </p>
                 </Slide>
                 <Fade delay={1000} triggerOnce={true}>
-                    <button className="btn px-5 rounded-md mt-14 tracking-wide">
+                    <button className="btn lg:px-5 sm:text-sm rounded-md mt-14 tracking-wide">
                     Learn More About Our Technology
                     </button>
                 </Fade>

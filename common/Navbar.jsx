@@ -53,14 +53,14 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-            <div className="md:hidden">
-            <a href="/home" className="block py-2 px-4 text-white hover:bg-gray-600">Home</a>
-            <a href="#" className="block py-2 px-4 text-white hover:bg-gray-600">About Us</a>
-            <a href="#" className="block py-2 px-4 text-white hover:bg-gray-600">Services</a>
-            <a href="#" className="block py-2 px-4 text-white hover:bg-gray-600">News</a>
-            <a href="#" className="block py-2 px-4 text-white hover:bg-gray-600">Shop</a>
-            <a href="#" className="block py-2 px-4 text-white hover:bg-gray-600">Contact</a>
-            <a href="#" className="block py-2 px-4 text-gray-800 bg-white font-semibold text-center rounded-full my-2 mx-4 hover:bg-gray-200">Free Quote</a>
+            <div className="md:hidden pt-10 flex flex-col space-y-10 absolute right-0 h-screen bg-black z-50">
+            <a href="/" className="navbar-sm-route">Home</a>
+            <a href="/about" className="navbar-sm-route">About Us</a>
+            <a href="/about" className="navbar-sm-route">AI Ecosystem</a>
+            <a href="/about" className="navbar-sm-route">News</a>
+            <a href="/about" className="navbar-sm-route">Products</a>
+            <a href="/about" className="navbar-sm-route">News</a>
+            <a href="/about" className="block py-2 px-4 text-gray-800 bg-white font-semibold text-center rounded-full my-2 mx-4 hover:bg-gray-200">Contact Us</a>
             </div>
         )}
         </nav>
