@@ -16,9 +16,9 @@ const InTheNewsSection = () => {
                 <h1 className="heading">In The News</h1>
             </Zoom>
             <Slide direction='up' duration={1000} triggerOnce={true}>
-                <p className="tagline text-xl">Limelight we obviously expected and loved</p>
+                <p className="tagline">Limelight we obviously expected and loved</p>
             </Slide>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 px-10 pt-10 md:px-20">
+            <div className="grid grid-cols-4 sm:grid-cols-2 gap-10 px-10 pt-10 md:px-20">
                 {newsLogos.map((logo, index) => (
                     <Fade key={index} duration={2000} triggerOnce={true}>
                     <div  className="p-7 bg-white/10 rounded-lg flex justify-center items-center shadow-md hover:shadow-lg transition-shadow">

@@ -17,7 +17,7 @@ const IndustrySolutionsSection = () => {
         <div className="flex flex-col pb-20">
         <div className="bg-black pt-20">
             <Zoom triggerOnce={true}>
-                <h1 className="heading text-4xl">Transforming Industries with AI-Driven Drone Solution</h1>
+                <h1 className="heading sm:text-2xl md:text-3xl lg:text-4xl">Transforming Industries with AI-Driven Drone Solution</h1>
             </Zoom>  
         </div>
         <div className="bg-black">

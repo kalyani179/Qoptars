@@ -33,9 +33,9 @@ const OurSolutions = () => {
             <h1 className="heading">Our Solutions</h1>
         </Zoom>
         <Slide direction="up" triggerOnce={true}>
-            <p className="tagline mx-20">Explore our end-to-end ecosystem designed to overcome the limitations of traditional drone operations and bring advanced intelligence to your fingertips:</p>
+            <p className="tagline  sm:px-8 md:px-12 lg:px-52">Explore our end-to-end ecosystem designed to overcome the limitations of traditional drone operations and bring advanced intelligence to your fingertips:</p>
         </Slide>    
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center my-10 px-10">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center my-10 px-10">
     {solutions.map((solution, index) => (
         <div key={index} className="border border-primary rounded-xl shadow-md transition-transform transform hover:scale-105 hover:shadow-[8px_8px_16px_rgba(44,172,196,0.5)]">
         <Fade duration={1000} triggerOnce={true}>
@@ -45,10 +45,10 @@ const OurSolutions = () => {
                 className="w-full h-32 object-cover rounded-t-xl mb-4"
             />
             <div className="p-5">
-                <h3 className="text-md font-semibold text-primary mb-2">
+                <h3 className="text-md sm:text-center font-semibold text-primary mb-2">
                     {solution.title}
                 </h3>
-                <p className="text-white text-sm">
+                <p className="text-white sm:text-center text-sm">
                     {solution.description}
                 </p>
             </div>

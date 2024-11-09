@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-10 lg:space-y-0 lg:space-x-10">
                 
                 {/* Logo and Description */}
-                <div className="w-96">
+                <div className="w-96 sm:px-5">
                     <a href="/">
                         <img src="/images/logo/logo.png" alt="Logo" className="w-32"/>
                     </a>
@@ -69,7 +69,7 @@ const Footer = () => {
                     ))}
                 </div>
             </div>
-            <p className="text-center text-gray-500 mt-12">All Copyrights Reserved © | Qoptars | 2024s</p>
+            <p className="text-center text-gray-500 mt-12">All Copyrights Reserved © | Qoptars | 2024</p>
         </footer>
     );
 };

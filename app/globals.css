@@ -19,13 +19,13 @@
         @apply tracking-widest text-lg hover:border-b hover:border-primary
     }
     .btn {
-        @apply bg-primary font-medium p-2 px-4 rounded-full capitalize hover:bg-opacity-80 transition duration-300;
+        @apply bg-primary font-medium p-2 sm:px-2 md:px-3 lg:px-4 rounded-full capitalize hover:bg-opacity-80 transition duration-300;
     }
     .heading{
-        @apply center font-bold text-5xl text-primary
+        @apply center font-bold sm:text-3xl md:text-4xl lg:text-5xl text-center text-primary 
     }
     .tagline{
-        @apply center font-light px-32 py-6 text-center
+        @apply center font-light sm:text-sm md:text-base lg:text-lg sm:px-8 md:px-12 lg:px-32 py-6 text-center
     }
 }
 
