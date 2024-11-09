@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React from 'react'
 import { Slide, Zoom,Fade } from "react-awesome-reveal";
 

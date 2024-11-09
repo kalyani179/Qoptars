@@ -7,10 +7,10 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <nav>
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div className="container sm:px-4 mx-auto py-3 flex justify-between items-center">
             
             {/* Logo */}
-            <a href="/" className="flex items-center space-x-2">
+            <a href="/" className="flex items-center">
                 <img src="/images/logo/logo.png" alt="Logo" className="w-32"/>
             </a>
 
