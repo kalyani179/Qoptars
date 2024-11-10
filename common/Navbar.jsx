@@ -7,15 +7,15 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <nav>
-        <div className="container sm:px-4 mx-auto py-3 flex justify-between items-center">
+        <div className="container ml-auto sm:px-4 py-4 flex justify-between items-center">
             
             {/* Logo */}
-            <a href="/" className="flex items-center">
+            <a href="/" className="md:-ml-28">
                 <img src="/images/logo/logo.png" alt="Logo" className="w-32"/>
             </a>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-14 items-center">
+            <div className="hidden md:flex md:mr-10 space-x-14 items-center">
                 <a href="/" className="navbar-route">Home</a>
                 <a href="/about" className="navbar-route">About Us</a>
                 <a href="/ai-ecosystem" className="navbar-route">AI Ecosystem</a>
