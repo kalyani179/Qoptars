@@ -1,21 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Gelasio&family=Inter:wght@400;500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer components {
+    * {
+        @apply m-0 p-0 box-border cursor-default;
+    }
+    body {
+        @apply font-inter;
+    }
+    .nav-link {
+        @apply font-medium cursor-pointer;
+    }
+    .heading {
+        @apply text-3xl font-bold text-neutral-950 leading-9
+    }
+    .caption {
+        @apply text-neutral-500 mt-3 max-w-2xl mx-auto text-center leading-relaxed
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+body::-webkit-scrollbar {
+    display: none;
 }
