@@ -59,7 +59,7 @@ const IndustriesSection = () => {
                                 className="rounded"
                             />
                         </div>
-                        <h3 className="text-xl font-semibold mb-3">{industry.title}</h3>
+                        <h3 className="text-xl font-semibold tracking-wide mb-3">{industry.title}</h3>
                         <p className="text-neutral-500">{industry.description}</p>
                     </div>
                 ))}

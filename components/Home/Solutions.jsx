@@ -53,7 +53,7 @@ const Solutions = () => {
                                 priority // Loads images faster
                             />
                         </div>
-                        <h3 className="text-xl font-semibold mb-3">{solution.title}</h3>
+                        <h3 className="text-xl font-semibold tracking-wide mb-4">{solution.title}</h3>
                         <p className="text-gray-600">{solution.description}</p>
                     </div>
                 ))}

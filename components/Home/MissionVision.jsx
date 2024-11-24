@@ -35,7 +35,7 @@ const MissionVision = () => {
                                 priority // Improves loading speed
                             />
                         </div>
-                        <h3 className="text-2xl font-semibold mb-3">{item.title}</h3>
+                        <h3 className="text-2xl font-semibold mb-3 tracking-wide">{item.title}</h3>
                         <p className="text-neutral-500">{item.description}</p>
                     </div>
                 ))}

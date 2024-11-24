@@ -13,7 +13,7 @@
         @apply font-medium cursor-pointer;
     }
     .heading {
-        @apply text-3xl font-bold text-neutral-950 leading-9
+        @apply text-3xl font-bold tracking-wide text-neutral-950 leading-9
     }
     .caption {
         @apply text-neutral-500 mt-3 max-w-2xl mx-auto text-center leading-relaxed

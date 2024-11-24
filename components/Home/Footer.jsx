@@ -49,7 +49,7 @@ const Footer = () => {
                     {/* Connect Section */}
                     <div>
                         <h3 className="font-bold mb-5">Connect</h3>
-                        <ul className="flex space-x-4">
+                        <ul className="flex space-x-8">
                             {socialLinks.map((social, index) => (
                                 <li key={index}>
                                     <a
@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Footer */}
-                <div className="mt-12 text-center text-gray-500 text-xs">
+                <div className="mt-12 text-center text-neutral-500 text-sm">
                     © 2024 Coptars. All rights reserved.
                 </div>
             </div>
