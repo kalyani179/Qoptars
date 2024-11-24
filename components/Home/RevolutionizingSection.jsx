@@ -13,10 +13,10 @@ const RevolutionizingSection = () => {
                         Transform your operations with our autonomous drone <br/> solutions. Experience the future of aerial intelligence and automation.
                     </p>
                     <div className="space-x-4">
-                        <button className="bg-black text-white py-3 px-10 rounded-lg shadow hover:bg-gray-800 transition">
+                        <button className="bg-black text-white py-3 px-12 rounded-lg shadow hover:bg-gray-800 transition">
                             Get Started →
                         </button>
-                        <button className="bg-white text-black border border-gray-300 py-3 px-10 rounded-lg shadow hover:bg-gray-100 transition">
+                        <button className="bg-white text-black border border-gray-300 py-3 px-12 rounded-lg shadow hover:bg-gray-100 transition">
                             Watch Demo
                         </button>
                     </div>

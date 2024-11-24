@@ -59,8 +59,8 @@ const IndustriesSection = () => {
                                 className="rounded"
                             />
                         </div>
-                        <h3 className="text-xl font-semibold tracking-wide mb-3">{industry.title}</h3>
-                        <p className="text-neutral-500">{industry.description}</p>
+                        <h3 className="title">{industry.title}</h3>
+                        <p className="description">{industry.description}</p>
                     </div>
                 ))}
             </div>

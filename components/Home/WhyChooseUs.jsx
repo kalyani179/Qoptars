@@ -49,8 +49,8 @@ const WhyChooseUs = () => {
                                 className="rounded"
                             />
                         </div>
-                        <h3 className="text-xl font-semibold mb-3">{reason.title}</h3>
-                        <p className="text-neutral-500">{reason.description}</p>
+                        <h3 className="title">{reason.title}</h3>
+                        <p className="description">{reason.description}</p>
                     </div>
                 ))}
             </div>
