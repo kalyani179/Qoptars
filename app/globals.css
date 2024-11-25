@@ -24,6 +24,12 @@
     .description {
         @apply text-neutral-500 tracking-normal
     }
+    .btn-black{
+        @apply bg-black text-white py-3 px-9 rounded-lg shadow hover:bg-gray-800 transition w-full md:w-auto;
+    }
+    .center{
+        @apply flex justify-center items-center 
+    }
 }
 
 body::-webkit-scrollbar {

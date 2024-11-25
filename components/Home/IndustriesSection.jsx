@@ -38,9 +38,9 @@ const IndustriesSection = () => {
     return (
         <div className="bg-white p-20">
             <div className="container mx-auto text-center mb-12">
-                <h2 className="heading">Transforming Industries with AI-Driven Solutions</h2>
-                <p className="caption">
-                    Our innovative drone solutions are revolutionizing operations across multiple sectors, delivering unprecedented efficiency and insights.
+                <h2 className="heading">Transforming Industries with AI-Driven Drone Solution</h2>
+                <p className="caption max-w-4xl">
+                    From defense and security to agriculture and environmental conservation, Qoptars’ autonomous drones and AI analytics deliver essential insights tailored to industry-specific needs. Our technology is transforming.
                 </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -63,6 +63,9 @@ const IndustriesSection = () => {
                         <p className="description">{industry.description}</p>
                     </div>
                 ))}
+            </div>
+            <div className="center mt-10">
+                <button className="btn-black">See Our Industry Solutions →</button>
             </div>
         </div>
     );

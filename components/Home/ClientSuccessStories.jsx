@@ -6,19 +6,19 @@ const testimonials = [
         name: "Sarah Chen",
         title: "Operations Director, BuildTech Construction",
         quote: "Coptars has revolutionized our site monitoring capabilities. The autonomous drones have increased our efficiency by 40% while improving safety standards.",
-        image: "/Home/ClientSuccessStories/sarah.png", // Path to Sarah's image
+        image: "/Home/ClientSuccessStories/sarah.png", 
     },
     {
         name: "Michael Rodriguez",
         title: "Chief Security Officer, SecurePort Facilities",
         quote: "The AI-powered security solutions from Coptars have transformed our perimeter monitoring. We've seen a 60% reduction in security incidents.",
-        image: "/Home/ClientSuccessStories/michael.png", // Path to Michael's image
+        image: "/Home/ClientSuccessStories/michael.png", 
     },
     {
         name: "Emily Thompson",
         title: "Agricultural Director, GreenFields Farming",
         quote: "Using Coptars' drone solutions for crop monitoring has helped us optimize irrigation and reduce water usage by 30%. The ROI has been remarkable.",
-        image: "/Home/ClientSuccessStories/emily.png", // Path to Emily's image
+        image: "/Home/ClientSuccessStories/emily.png", 
     },
 ];
 
@@ -27,7 +27,7 @@ const ClientSuccessStories = () => {
         <div className="text-center p-20">
             <h2 className="heading">Client Success Stories</h2>
             <p className="caption">
-                Discover how our clients are achieving remarkable results with Coptars AI-powered drone solutions.
+                Discover how Qoptars is making a real impact across industries. From emergency response to industrial monitoring, our autonomous drones are empowering clients to take timely, effective action.
             </p>
             <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {testimonials.map((testimonial, index) => (
@@ -35,7 +35,6 @@ const ClientSuccessStories = () => {
                         key={index}
                         className="p-6 bg-white shadow-md rounded-lg hover:shadow-lg border transition-shadow"
                     >
-                        {/* Row layout for image and name/title */}
                         <div className="flex mb-4">
                             <div className="w-16 h-16">
                                 <Image
@@ -55,6 +54,10 @@ const ClientSuccessStories = () => {
                     </div>
                 ))}
             </div>
+            <div className="center mt-10">
+                <button className="btn-black">Explore Our Case Studies →</button>
+            </div>
+            
         </div>
     );
 };

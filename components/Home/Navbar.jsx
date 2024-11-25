@@ -35,19 +35,20 @@ const Navbar = () => {
                             />
                         </g>
                     </svg>
-                    <p>Coptars</p>
+                    <p>Qoptars</p>
                 </div>
 
                 {/* Navigation Links for Medium and Larger Screens */}
                 <div className="hidden md:flex justify-center items-center space-x-8">
                     <ul className="hidden md:flex space-x-10">
-                        <li className="nav-link">Solutions</li>
-                        <li className="nav-link">Industries</li>
-                        <li className="nav-link">About</li>
-                        <li className="nav-link">Contact</li>
+                        <li className="nav-link">Home</li>
+                        <li className="nav-link">About Us</li>
+                        <li className="nav-link">Ai Ecosystem</li>
+                        <li className="nav-link">Products</li>
+                        <li className="nav-link">News</li>
                     </ul>
                     <button className="hidden md:block bg-black text-white py-2 px-6 rounded-lg shadow hover:bg-gray-800">
-                        Get Started
+                        Contact us
                     </button>
                 </div>
 

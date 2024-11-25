@@ -1,31 +1,31 @@
 import React from 'react';
-import Image from 'next/image'; // Import Next.js Image component
+import Image from 'next/image'; 
 
 const Solutions = () => {
     const solutions = [
         {
-            icon: '/home/Solutions/ai-autonomous-drive.svg', // Path to the SVG in the `public` folder
-            title: 'AI Autonomous Drone',
+            icon: '/home/Solutions/ai-autonomous-drive.svg', 
+            title: 'Autonomous Drones',
             description:
-                'Advanced drones equipped with AI for autonomous navigation, obstacle avoidance, and intelligent decision-making.',
+                'Equipped with cutting-edge sensors and edge computing, Our drones provide unparalleled data accuracy and operate without the need for manual intervention.',
         },
         {
             icon: '/home/Solutions/ai-analytics-software.svg',
             title: 'AI Analytics Software',
             description:
-                'Powerful analytics platform that processes drone data to deliver actionable insights and intelligent reporting.',
+                'Real-time processing and predictive analytics for fast, actionable insights.',
         },
         {
             icon: '/home/Solutions/ai-docking-station.svg',
             title: 'AI Docking Station',
             description:
-                'Smart docking stations enabling autonomous charging, maintenance, and mission deployment capabilities.',
+                'Enables fully autonomous flights, automatic charging, and remote operation support.',
         },
         {
             icon: '/home/Solutions/ai-fleet-management.svg',
             title: 'AI Fleet Management',
             description:
-                'Comprehensive fleet management solution for coordinating multiple drones and optimizing operations.',
+                'Efficiently manage large-scale drone operations from any location.'
         },
     ];
 
@@ -34,7 +34,7 @@ const Solutions = () => {
             <div className="mx-auto text-center mb-12">
                 <h2 className="heading">Our Solutions</h2>
                 <p className="caption">
-                    Discover our comprehensive suite of AI-powered drone solutions designed to transform your operations and deliver exceptional results.
+                Explore our end-to-end ecosystem designed to overcome the limitations of traditional drone operations and bring advanced intelligence to your fingertips.
                 </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -43,20 +43,22 @@ const Solutions = () => {
                         key={index}
                         className="bg-white flex flex-col items-center text-center p-6 border rounded-lg shadow-md hover:shadow-lg transition"
                     >
-                        {/* Use Next.js Image component */}
                         <div className="w-16 h-16 mb-4 relative">
                             <Image
-                                src={solution.icon} // Path to the icon
-                                alt={`${solution.title} Icon`} // Accessibility text
-                                layout="fill" // Ensures the image fills its container
-                                objectFit="contain" // Maintains aspect ratio
-                                priority // Loads images faster
+                                src={solution.icon}
+                                alt={`${solution.title} Icon`} 
+                                layout="fill" 
+                                objectFit="contain" 
+                                priority 
                             />
                         </div>
                         <h3 className="title">{solution.title}</h3>
                         <p className="description">{solution.description}</p>
                     </div>
                 ))}
+            </div>
+            <div className="center mt-10">
+                <button className="btn-black">Discover Our Solutions →</button>
             </div>
         </div>
     );

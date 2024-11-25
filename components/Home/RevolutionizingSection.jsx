@@ -5,19 +5,16 @@ const RevolutionizingSection = () => {
         <div className="bg-neutral-100 py-5">
             <div className="sm:p-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
                 {/* Text Content */}
-                <div className="text-center md:text-left md:w-1/2 space-y-6">
+                <div className="text-center md:text-left md:w-1/2 space-y-8">
                     <h1 className="text-4xl md:text-6xl sm:leading-10 font-bold sm:font-extrabold text-gray-900 bg-gradient-to-r from-[#171717] to-[#2563EB] bg-clip-text text-transparent">
-                        Revolutionizing Industries with AI-Powered Drones
+                            Welcome to Qoptars
                     </h1>
-                    <p className="text-neutral-500 text-xl sm:text-lg leading-7">
-                        Transform your operations with our autonomous drone solutions. Experience the future of aerial intelligence and automation.
+                    <p className="text-neutral-500 text-3xl sm:text-lg">
+                        Redefining Aerial Intelligence and Autonomous Drones with AI.
                     </p>
-                    <div className="space-x-4 sm:space-y-4">
-                        <button className="bg-black text-white py-3 px-9 rounded-lg shadow hover:bg-gray-800 transition w-full md:w-auto">
-                            Get Started →
-                        </button>
-                        <button className="bg-white text-black border border-gray-300 py-3 px-9 rounded-lg shadow hover:bg-gray-100 transition w-full md:w-auto">
-                            Watch Demo
+                    <div>
+                        <button className="btn-black">
+                            Learn More About Our Technology →
                         </button>
                     </div>
                 </div>
