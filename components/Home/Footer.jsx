@@ -11,7 +11,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-neutral-100 p-10">
+        <footer className="bg-neutral-100 md:p-10">
             <div className="container mx-auto px-6">
                 {/* Responsive Grid Layout */}
                 <div className="flex flex-col sm:space-y-5 md:flex-row justify-between">
