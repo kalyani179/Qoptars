@@ -30,8 +30,8 @@ const OurJourney = () => {
                             >
                                 {/* Milestone Content */}
                                 <div
-                                    className={`bg-white p-6 shadow-md rounded-md w-full lg:w-5/12 ${
-                                        index % 2 === 0 ? "lg:ml-auto lg:mr-0" : "lg:ml-0 lg:mr-auto"
+                                    className={`bg-white p-6 shadow-md rounded-md sm:-mt-20 w-5/12 ${
+                                        index % 2 === 0 ? "ml-auto mr-0" : "ml-0 mr-auto"
                                     }`}
                                 >
                                     <h3 className="text-lg font-semibold">{milestone.year}</h3>

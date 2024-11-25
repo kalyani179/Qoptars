@@ -14,12 +14,12 @@ const Footer = () => {
         <footer className="bg-neutral-100 p-10">
             <div className="container mx-auto px-6">
                 {/* Responsive Grid Layout */}
-                <div className="flex justify-between">
-                <div className="flex justify-around space-x-20">
+                <div className="flex flex-col sm:space-y-5 md:flex-row justify-between">
+                <div className="flex sm:flex-col sm:space-y-5 justify-around md:space-x-20">
                     {/* Coptars Section */}
                     <div>
                         <h3 className="font-bold mb-2 text-lg">Coptars</h3>
-                        <p className="text-neutral-500 md:w-72">
+                        <p className="text-neutral-500 w-72 sm:w-80">
                             Revolutionizing industries with AI-powered drone solutions.
                         </p>
                     </div>
