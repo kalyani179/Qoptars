@@ -12,7 +12,7 @@ const RevolutionizingSection = () => {
                     <p className="text-neutral-500 text-xl sm:text-lg leading-7">
                         Transform your operations with our autonomous drone solutions. Experience the future of aerial intelligence and automation.
                     </p>
-                    <div className="space-y-4">
+                    <div className="space-x-4 sm:space-y-4">
                         <button className="bg-black text-white py-3 px-9 rounded-lg shadow hover:bg-gray-800 transition w-full md:w-auto">
                             Get Started →
                         </button>
