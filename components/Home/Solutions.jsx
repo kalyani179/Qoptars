@@ -4,25 +4,25 @@ import Image from 'next/image';
 const Solutions = () => {
     const solutions = [
         {
-            icon: '/home/Solutions/ai-autonomous-drive.svg', 
+            icon: '/Home/Solutions/ai-autonomous-drive.svg', 
             title: 'Autonomous Drones',
             description:
                 'Equipped with cutting-edge sensors and edge computing, Our drones provide unparalleled data accuracy and operate without the need for manual intervention.',
         },
         {
-            icon: '/home/Solutions/ai-analytics-software.svg',
+            icon: '/Home/Solutions/ai-analytics-software.svg',
             title: 'AI Analytics Software',
             description:
                 'Real-time processing and predictive analytics for fast, actionable insights.',
         },
         {
-            icon: '/home/Solutions/ai-docking-station.svg',
+            icon: '/Home/Solutions/ai-docking-station.svg',
             title: 'AI Docking Station',
             description:
                 'Enables fully autonomous flights, automatic charging, and remote operation support.',
         },
         {
-            icon: '/home/Solutions/ai-fleet-management.svg',
+            icon: '/Home/Solutions/ai-fleet-management.svg',
             title: 'AI Fleet Management',
             description:
                 'Efficiently manage large-scale drone operations from any location.'

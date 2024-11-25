@@ -4,13 +4,13 @@ import Image from 'next/image';
 const MissionVision = () => {
     const items = [
         {
-            icon: '/home/MissionVision/mission.svg', 
+            icon: '/Home/MissionVision/mission.svg', 
             title: 'Our Mission',
             description:
                 'At Qoptars, we are revolutionizing industries through autonomous drone technology and AI-driven analytics. Our mission is to empower organizations across diverse sectors with precise, real-time data to drive efficient, safe, and effective decision-making.',
         },
         {
-            icon: '/home/MissionVision/vision.svg', 
+            icon: '/Home/MissionVision/vision.svg', 
             title: 'Our Vision',
             description:
                 'We envision a future where drones and AI seamlessly integrate into daily operations, transforming industries with reliable, autonomous technology. By advancing aerial intelligence, Qoptars strives to create a safer, more responsive world for businesses and communities.'
