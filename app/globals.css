@@ -1,47 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Gelasio&family=Inter:wght@400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @layer components {
-    body{
-        @apply bg-black
-    }
     * {
-        @apply m-0 p-0 box-border font-poppins text-white;
+        @apply m-0 p-0 box-border cursor-default;
     }
-    .center {
-        @apply flex justify-center items-center
+    body {
+        @apply font-inter tracking-wide;
     }
-    .navbar-route {
-        @apply tracking-widest text-lg hover:border-b hover:border-primary
+    .nav-link {
+        @apply font-medium cursor-pointer hover:text-black/80;
     }
-    .navbar-sm-route{
-        @apply block px-10 text-white hover:bg-gray-600
+    .heading {
+        @apply text-3xl font-bold text-neutral-950 leading-9
     }
-    .btn {
-        @apply bg-primary font-medium p-2 sm:px-2 md:px-3 lg:px-4 rounded-full capitalize hover:bg-opacity-80 transition duration-300;
+    .caption {
+        @apply text-neutral-500 tracking-normal mt-3 max-w-2xl mx-auto text-center leading-relaxed
     }
-    .heading{
-        @apply center font-bold sm:text-3xl md:text-4xl lg:text-5xl text-center text-primary 
+    .title {
+        @apply text-xl font-semibold mb-4
     }
-    .tagline{
-        @apply center font-light sm:text-sm md:text-base lg:text-lg sm:px-8 md:px-12 lg:px-32 py-6 text-center
+    .description {
+        @apply text-neutral-500 tracking-normal
     }
 }
 
-/* Styles for hiding scrollbar on modal content */
-
-.text-area-input::-webkit-scrollbar,.modal-content::-webkit-scrollbar,.sidenav::-webkit-scrollbar {
-    width: 0 !important;
-    display: none; /* Safari and Chrome */
-}
-.text-area-input .modal-content ,.sidenav{
-    scrollbar-width: none; /* Firefox */
-}
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
-    background-color: black;
 }

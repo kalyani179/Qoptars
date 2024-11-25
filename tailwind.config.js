@@ -4,7 +4,6 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./common/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     screens: {
@@ -20,19 +19,23 @@ module.exports = {
       'xl': {'min': '1201px'},
       // => @media (min-width: 1280px and max-width: 1535px) { ... }
 
+
+      // 'lg': {'max': '1023px'},
+      // // => @media (max-width: 1023px) { ... }
+
+      // 'md': {'max': '767px'},
+      // // => @media (max-width: 767px) { ... }
+
+      // 'sm': {'max': '576px'},
+      // // => @media (max-width: 639px) { ... }
     },
     extend: {
       fontFamily: {
-        inter: ["'Inter'", "sans-serif"],
-        gelasio: ["'Gelasio'", "serif"],
-        lato: ["'Lato'", "sans-serif"],
-        merriweather: ["'Merriweather'", "serif"],
-        poppins : ["'Poppins'","serif"]
+        inter: ["'Inter'", "sans-serif"]
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#2cacc4", // blue-400 hex value
       },
     },
   },
