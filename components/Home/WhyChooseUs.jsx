@@ -1,5 +1,7 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
+import { Zoom } from 'react-awesome-reveal';
 
 const WhyChooseUs = () => {
     const reasons = [
@@ -39,6 +41,7 @@ const WhyChooseUs = () => {
                         key={index}
                         className="flex flex-col items-center text-center rounded-lg"
                     >
+                        <Zoom triggerOnce={true}>
                         <div className="mb-4">
                             <Image
                                 src={reason.icon}
@@ -50,6 +53,7 @@ const WhyChooseUs = () => {
                         </div>
                         <h3 className="title">{reason.title}</h3>
                         <p className="description">{reason.description}</p>
+                        </Zoom>
                     </div>
                 ))}
             </div>

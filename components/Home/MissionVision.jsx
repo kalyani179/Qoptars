@@ -1,5 +1,7 @@
+"use client"
 import React from 'react';
 import Image from 'next/image'; 
+import { Slide } from 'react-awesome-reveal';
 
 const MissionVision = () => {
     const items = [
@@ -20,24 +22,29 @@ const MissionVision = () => {
     return (
         <div className="bg-white p-20">
             <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-                {items.map((item, index) => (
+            {items.map((item, index) => (
+                <Slide
+                    direction={index % 2 === 0 ? "left" : "right"}
+                    triggerOnce={true}
+                    key={index} 
+                >
                     <div
-                        key={index}
                         className="flex flex-col items-start p-6 border rounded-lg shadow-md hover:shadow-lg transition"
                     >
                         <div className="relative w-12 h-12 mb-4">
                             <Image
                                 src={item.icon}
-                                alt={`${item.title} Icon`} 
-                                layout="fill" 
-                                objectFit="contain" 
-                                priority 
+                                alt={`${item.title} Icon`}
+                                layout="fill"
+                                objectFit="contain"
+                                priority
                             />
                         </div>
                         <h3 className="text-2xl font-semibold mb-3 tracking-wide">{item.title}</h3>
                         <p className="text-neutral-500">{item.description}</p>
                     </div>
-                ))}
+                </Slide>
+            ))}
             </div>
         </div>
     );

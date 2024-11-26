@@ -1,5 +1,7 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
+import { Fade } from 'react-awesome-reveal';
 
 const IndustriesSection = () => {
     const industries = [
@@ -45,8 +47,8 @@ const IndustriesSection = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {industries.map((industry, index) => (
+                    <Fade key={index} triggerOnce={true}>
                     <div
-                        key={index}
                         className="p-6 border rounded-lg shadow-md hover:shadow-lg transition"
                     >
                         {/* Replace with Image component for SVG or other images */}
@@ -62,6 +64,7 @@ const IndustriesSection = () => {
                         <h3 className="title">{industry.title}</h3>
                         <p className="description">{industry.description}</p>
                     </div>
+                    </Fade>
                 ))}
             </div>
             <div className="center mt-10">

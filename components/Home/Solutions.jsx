@@ -1,5 +1,7 @@
+"use client"
 import React from 'react';
 import Image from 'next/image'; 
+import { Zoom } from 'react-awesome-reveal';
 
 const Solutions = () => {
     const solutions = [
@@ -39,10 +41,10 @@ const Solutions = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {solutions.map((solution, index) => (
-                    <div
-                        key={index}
+                    <div key={index}
                         className="bg-white flex flex-col items-center text-center p-6 border rounded-lg shadow-md hover:shadow-lg transition"
                     >
+                    <Zoom triggerOnce={true}>
                         <div className="w-16 h-16 mb-4 relative">
                             <Image
                                 src={solution.icon}
@@ -54,6 +56,7 @@ const Solutions = () => {
                         </div>
                         <h3 className="title">{solution.title}</h3>
                         <p className="description">{solution.description}</p>
+                        </Zoom>
                     </div>
                 ))}
             </div>
