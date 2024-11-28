@@ -9,6 +9,7 @@ import ClientSuccessStories from './ClientSuccessStories'
 import OurClients from './OurClients'
 import OurJourney from './OurJourney'
 import Footer from './Footer'
+import InTheNewsSection from './InTheNewsSection'
 
 const Home = () => {
     return (
@@ -21,7 +22,8 @@ const Home = () => {
             <WhyChooseUs />
             <ClientSuccessStories />
             <OurClients />
-            <OurJourney />
+            {/* <OurJourney /> */}
+            <InTheNewsSection />
             <Footer />
         </div>
     )

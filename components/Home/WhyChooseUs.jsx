@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import { Zoom } from 'react-awesome-reveal';
+import { Slide, Zoom } from 'react-awesome-reveal';
 
 const WhyChooseUs = () => {
     const reasons = [
@@ -30,10 +30,14 @@ const WhyChooseUs = () => {
     return (
         <div className="bg-neutral-100 p-20">
             <div className="container mx-auto text-center mb-12">
+            <Zoom duration={1000} triggerOnce={true}>
                 <h2 className="heading">Why Choose Qoptars?</h2>
+            </Zoom>
+            <Slide direction='up' duration={1000} triggerOnce={true}>
                 <p className="caption">
                 Our advanced drone ecosystem is designed with a singular purpose: to make aerial intelligence accessible, reliable, and effective for any mission. We bring you.
                 </p>
+            </Slide>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {reasons.map((reason, index) => (

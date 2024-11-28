@@ -10,7 +10,7 @@
         @apply font-inter tracking-wide;
     }
     .nav-link {
-        @apply font-medium cursor-pointer hover:text-black/80;
+        @apply font-medium cursor-pointer text-white hover:text-gray-200;
     }
     .heading {
         @apply text-3xl font-bold text-neutral-950 leading-9

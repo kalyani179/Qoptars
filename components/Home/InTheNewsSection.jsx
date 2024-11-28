@@ -12,12 +12,12 @@ const InTheNewsSection = () => {
         { src: "/images/home/InTheNews/dailyhunt.png", alt: "dailyhunt" }
     ];
     return (
-        <div className="pb-32">
+        <div className="p-6 md:p-20">
             <Zoom duration={1000} triggerOnce={true}>
-                <h1 className="heading">In The News</h1>
+                <h1 className="heading text-center">In The News</h1>
             </Zoom>
             <Slide direction='up' duration={1000} triggerOnce={true}>
-                <p className="tagline">Limelight we obviously expected and loved</p>
+                <p className="caption">Limelight we obviously expected and loved</p>
             </Slide>
             <div className="grid grid-cols-4 sm:grid-cols-2 gap-10 px-10 pt-10 md:px-20">
                 {newsLogos.map((logo, index) => (

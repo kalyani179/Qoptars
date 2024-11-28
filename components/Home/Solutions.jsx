@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Image from 'next/image'; 
-import { Zoom } from 'react-awesome-reveal';
+import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 
 const Solutions = () => {
     const solutions = [
@@ -34,10 +34,14 @@ const Solutions = () => {
     return (
         <div className="bg-neutral-100 p-20">
             <div className="mx-auto text-center mb-12">
+            <Zoom duration={1000} triggerOnce={true}>
                 <h2 className="heading">Our Solutions</h2>
+            </Zoom>
+            <Slide direction="up" triggerOnce={true}>
                 <p className="caption">
                 Explore our end-to-end ecosystem designed to overcome the limitations of traditional drone operations and bring advanced intelligence to your fingertips.
                 </p>
+            </Slide>    
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {solutions.map((solution, index) => (
@@ -60,9 +64,11 @@ const Solutions = () => {
                     </div>
                 ))}
             </div>
+            <Fade duration={3000} triggerOnce={true}>
             <div className="center mt-10">
                 <button className="btn-black ">Discover Our Solutions →</button>
             </div>
+            </Fade>
         </div>
     );
 };
