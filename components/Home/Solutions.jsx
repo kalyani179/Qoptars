@@ -61,7 +61,7 @@ const Solutions = () => {
                 ))}
             </div>
             <div className="center mt-10">
-                <button className="btn-black">Discover Our Solutions →</button>
+                <button className="btn-black ">Discover Our Solutions →</button>
             </div>
         </div>
     );

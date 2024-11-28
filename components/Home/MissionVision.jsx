@@ -21,7 +21,7 @@ const MissionVision = () => {
 
     return (
         <div className="bg-white p-20">
-            <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="mx-auto flex gap-10">
             {items.map((item, index) => (
                 <Slide
                     direction={index % 2 === 0 ? "left" : "right"}

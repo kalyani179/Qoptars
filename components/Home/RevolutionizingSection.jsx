@@ -1,4 +1,6 @@
+"use client"
 import React from 'react';
+import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 
 const RevolutionizingSection = () => {
     return (
@@ -6,16 +8,22 @@ const RevolutionizingSection = () => {
             <div className="sm:p-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
                 {/* Text Content */}
                 <div className="text-center md:text-left md:w-1/2 space-y-8">
+                <Zoom triggerOnce={true}>
                     <h1 className="text-4xl md:text-6xl sm:leading-10 font-bold sm:font-extrabold text-gray-900 bg-gradient-to-r from-[#171717] to-[#2563EB] bg-clip-text text-transparent">
                             Welcome to Qoptars
                     </h1>
+                </Zoom>
+                <Fade triggerOnce={true}>
                     <p className="text-neutral-500 text-3xl sm:text-lg">
                         Redefining Aerial Intelligence and Autonomous Drones with AI.
                     </p>
+                </Fade>
                     <div>
+                    <Fade triggerOnce={true}>
                         <button className="btn-black">
                             Learn More About Our Technology →
                         </button>
+                    </Fade>
                     </div>
                 </div>
 
