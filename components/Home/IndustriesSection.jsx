@@ -7,27 +7,27 @@ const IndustriesSection = () => {
     const industries = [
         {
             icon: '/Home/Industries/infrastructure.svg', // Path to your SVG in the `public` folder
-            title: 'Infrastructure',
+            title: 'Industrial Inspections',
             description: 'Automated inspection and monitoring of critical infrastructure.',
         },
         {
             icon: '/Home/Industries/manufacturing.svg',
-            title: 'Manufacturing',
+            title: 'Energy & Utilities',
             description: 'Enhanced facility surveillance and inventory management.',
         },
         {
             icon: '/Home/Industries/agriculture.svg',
-            title: 'Agriculture',
+            title: 'Environmental Conservation',
             description: 'Precision farming and crop health monitoring solutions.',
         },
         {
             icon: '/Home/Industries/security.svg',
-            title: 'Security',
+            title: 'Public Safety',
             description: 'Advanced surveillance and perimeter monitoring.',
         },
         {
             icon: '/Home/Industries/construction.svg',
-            title: 'Construction',
+            title: 'Smart Cities',
             description: 'Site monitoring and progress tracking automation.',
         },
         {
@@ -67,9 +67,11 @@ const IndustriesSection = () => {
                     </Fade>
                 ))}
             </div>
+            <Fade duration={3000} triggerOnce={true}>
             <div className="center mt-10">
                 <button className="btn-black">See Our Industry Solutions →</button>
             </div>
+            </Fade>
         </div>
     );
 };

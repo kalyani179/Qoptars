@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import { Slide, Zoom } from 'react-awesome-reveal';
+import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 
 const WhyChooseUs = () => {
     const reasons = [
@@ -61,9 +61,11 @@ const WhyChooseUs = () => {
                     </div>
                 ))}
             </div>
+            <Fade duration={3000} triggerOnce={true}>
             <div className="center mt-10">
                 <button className="btn-black">Learn About Our Unique Approach →</button>
             </div>
+            </Fade>
         </div>
     );
 };

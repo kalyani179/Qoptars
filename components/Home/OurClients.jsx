@@ -1,37 +1,79 @@
+"use client";
+
+import dynamic from "next/dynamic";
 import React from "react";
 import Image from "next/image";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const clientLogos = [
+// Dynamically import react-slick to avoid SSR issues with Next.js
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
+
+const OurClients = () => {
+  // Settings for the carousel with auto-scrolling enabled
+  const settings = {
+    infinite: true, // Infinite scrolling
+    speed: 500, // Transition speed
+    slidesToShow: 4, // Number of slides visible at once
+    slidesToScroll: 1, // Number of slides to scroll at a time
+    dots: false, // Disable the dots navigation
+    arrows: true, // Enable the previous/next arrows
+    autoplay: true, // Enable auto-scrolling
+    autoplaySpeed: 2000, // Time in milliseconds before the next slide appears
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3, // Show 3 slides for medium-sized screens
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2, // Show 2 slides for smaller screens
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1, // Show 1 slide for mobile screens
+        },
+      },
+    ],
+  };
+
+  // List of client logos
+  const clientLogos = [
     { id: 1, src: "/Home/OurClients/client.png", alt: "Client Logo 1" },
     { id: 2, src: "/Home/OurClients/client.png", alt: "Client Logo 2" },
     { id: 3, src: "/Home/OurClients/client.png", alt: "Client Logo 3" },
     { id: 4, src: "/Home/OurClients/client.png", alt: "Client Logo 4" },
     { id: 5, src: "/Home/OurClients/client.png", alt: "Client Logo 5" },
     { id: 6, src: "/Home/OurClients/client.png", alt: "Client Logo 6" },
-];
+  ];
 
-const OurClients = () => {
-    return (
-        <div className="p-6 md:p-20 bg-neutral-100 text-center">
-            <h2 className="heading">Our Clients</h2>
-            <p className="caption">
-                Trusted by leading organizations across industries
-            </p>
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                {clientLogos.map((logo) => (
-                    <div key={logo.id} className="flex items-center justify-center">
-                        <Image
-                            src={logo.src}
-                            alt={logo.alt}
-                            width={120} // Adjust as needed
-                            height={120} // Adjust as needed
-                            className="transform hover:scale-110 transition-transform"
-                        />
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
+  return (
+    <div className="p-6 md:p-20 bg-neutral-100 text-center">
+      <h2 className="heading">Our Clients</h2>
+      <p className="caption">
+        Trusted by leading organizations across industries
+      </p>
+      {/* Carousel */}
+      <Slider {...settings}>
+        {clientLogos.map((logo) => (
+          <div key={logo.id} className="flex items-center justify-center p-6 pt-11 px-20">
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={120}
+              height={120}
+              className="transform hover:scale-110 transition-transform"
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
 };
 
 export default OurClients;

@@ -1,5 +1,7 @@
+"use client"
 import React from "react";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 
 const testimonials = [
     {
@@ -26,7 +28,7 @@ const ClientSuccessStories = () => {
     return (
         <div className="text-center p-20">
             <h2 className="heading">Client Success Stories</h2>
-            <p className="caption">
+            <p className="caption max-w-3xl">
                 Discover how Qoptars is making a real impact across industries. From emergency response to industrial monitoring, our autonomous drones are empowering clients to take timely, effective action.
             </p>
             <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -54,10 +56,11 @@ const ClientSuccessStories = () => {
                     </div>
                 ))}
             </div>
+            <Fade duration={3000} triggerOnce={true}>
             <div className="center mt-10">
                 <button className="btn-black">Explore Our Case Studies →</button>
             </div>
-            
+            </Fade>
         </div>
     );
 };

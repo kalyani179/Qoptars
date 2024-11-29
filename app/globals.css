@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer components {
     * {
         @apply m-0 p-0 box-border cursor-default;
@@ -35,3 +36,30 @@
 body::-webkit-scrollbar {
     display: none;
 }
+/* Style the slick-prev and slick-next buttons to have a black background */
+.slick-prev, .slick-next {
+    background-color: black; /* Black background for both arrows */
+    color: black; /* White arrow color */
+    border-radius: 50%; /* Round buttons */
+    padding: 10px; /* Adjust padding for size */
+  }
+  
+  /* Adjust the arrow icons to be white */
+  .slick-prev::before, .slick-next::before {
+    color: black !important; /* White color for the arrow icon */
+  }
+  
+  /* Hover effect for arrows */
+  .slick-prev:hover, .slick-next:hover {
+    background-color: #333; /* Darker shade of black when hovered */
+  }
+  
+  /* Optional: Positioning adjustments if necessary */
+  .slick-prev {
+    left: 10px; /* Adjust distance from the left */
+  }
+  
+  .slick-next {
+    right: 10px; /* Adjust distance from the right */
+  }
+  
