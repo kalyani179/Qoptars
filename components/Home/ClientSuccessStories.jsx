@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 const testimonials = [
     {
@@ -27,16 +27,21 @@ const testimonials = [
 const ClientSuccessStories = () => {
     return (
         <div className="text-center p-20">
+        <Zoom triggerOnce={true}>
             <h2 className="heading">Client Success Stories</h2>
+        </Zoom>
+        <Slide direction='up' duration={1000} triggerOnce={true}>
             <p className="caption max-w-3xl">
                 Discover how Qoptars is making a real impact across industries. From emergency response to industrial monitoring, our autonomous drones are empowering clients to take timely, effective action.
             </p>
+        </Slide>
             <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {testimonials.map((testimonial, index) => (
                     <div
                         key={index}
                         className="p-6 bg-white shadow-md rounded-lg hover:shadow-lg border transition-shadow"
                     >
+                    <Zoom triggerOnce={true}>
                         <div className="flex mb-4">
                             <div className="w-16 h-16">
                                 <Image
@@ -53,6 +58,7 @@ const ClientSuccessStories = () => {
                             </div>
                         </div>
                         <blockquote className="text-neutral-500 text-left">{`"${testimonial.quote}"`}</blockquote>
+                    </Zoom>
                     </div>
                 ))}
             </div>

@@ -13,11 +13,11 @@ const RevolutionizingSection = () => {
                             Welcome to Qoptars
                     </h1>
                 </Zoom>
-                <Fade triggerOnce={true}>
+                <Slide direction='down' duration={1000} triggerOnce={true}>
                     <p className="text-neutral-500 text-3xl sm:text-lg">
                         Redefining Aerial Intelligence and Autonomous Drones with AI.
                     </p>
-                </Fade>
+                </Slide>
                     <div>
                     <Fade triggerOnce={true}>
                         <button className="btn-black">

@@ -5,6 +5,7 @@ import React from "react";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Slide, Zoom } from "react-awesome-reveal";
 
 // Dynamically import react-slick to avoid SSR issues with Next.js
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
@@ -13,7 +14,7 @@ const OurClients = () => {
   // Settings for the carousel with auto-scrolling enabled
   const settings = {
     infinite: true, // Infinite scrolling
-    speed: 500, // Transition speed
+    speed: 1000, // Transition speed
     slidesToShow: 4, // Number of slides visible at once
     slidesToScroll: 1, // Number of slides to scroll at a time
     dots: false, // Disable the dots navigation
@@ -54,14 +55,18 @@ const OurClients = () => {
 
   return (
     <div className="p-6 md:p-20 bg-neutral-100 text-center">
+    <Zoom triggerOnce={true}>
       <h2 className="heading">Our Clients</h2>
+    </Zoom>
+    <Slide direction='up' duration={1000} triggerOnce={true}>
       <p className="caption">
         Trusted by leading organizations across industries
       </p>
+      </Slide>
       {/* Carousel */}
       <Slider {...settings}>
         {clientLogos.map((logo) => (
-          <div key={logo.id} className="flex items-center justify-center p-6 pt-11 px-20">
+          <div key={logo.id} className="flex items-center justify-center pt-11 px-20">
             <Image
               src={logo.src}
               alt={logo.alt}

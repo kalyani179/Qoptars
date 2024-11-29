@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import { Fade } from 'react-awesome-reveal';
+import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 
 const IndustriesSection = () => {
     const industries = [
@@ -40,10 +40,14 @@ const IndustriesSection = () => {
     return (
         <div className="bg-white p-20">
             <div className="container mx-auto text-center mb-12">
+            <Zoom triggerOnce={true}>
                 <h2 className="heading">Transforming Industries with AI-Driven Drone Solution</h2>
+            </Zoom>
+            <Slide direction='up' duration={1000} triggerOnce={true}>
                 <p className="caption max-w-4xl">
                     From defense and security to agriculture and environmental conservation, Qoptars’ autonomous drones and AI analytics deliver essential insights tailored to industry-specific needs. Our technology is transforming.
                 </p>
+            </Slide>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {industries.map((industry, index) => (
