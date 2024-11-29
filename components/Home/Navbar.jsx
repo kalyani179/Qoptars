@@ -19,7 +19,7 @@ const Navbar = () => {
                 <div className="hidden md:flex justify-center items-center space-x-8">
                     <ul className="hidden md:flex space-x-10">
                         <li className="nav-link">Home</li>
-                        <li className="nav-link">About Us</li>
+                        <li className="nav-link"><a href="/about">About Us</a></li>
                         <li className="nav-link">Ai Ecosystem</li>
                         <li className="nav-link">Products</li>
                         <li className="nav-link">News</li>
