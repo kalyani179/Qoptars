@@ -16,7 +16,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Navigation Links for Medium and Larger Screens */}
-                <div className="hidden md:flex justify-center items-center space-x-8">
+                <div className="hidden lg:flex justify-center items-center space-x-8">
                     <ul className="hidden md:flex space-x-10">
                         <li className="nav-link"><a href="/">Home</a></li>
                         <li className="nav-link"><a href="/about">About Us</a></li>
@@ -24,14 +24,14 @@ const Navbar = () => {
                         <li className="nav-link"><a href="/products">Products</a></li>
                         <li className="nav-link"><a href="/news">News</a></li>
                     </ul>
-                    <button className="hidden md:block bg-white text-black py-2 px-6 rounded-lg shadow hover:bg-white/80">
+                    <button className="hidden lg:block bg-white text-black py-2 px-6 rounded-lg shadow hover:bg-white/80">
                         Contact us
                     </button>
                 </div>
 
                 {/* Hamburger Menu for Small Screens */}
                 <div
-                    className="md:hidden cursor-pointer relative z-50"
+                    className="lg:hidden cursor-pointer relative z-50"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? (

@@ -11,7 +11,7 @@
         @apply font-inter tracking-wide;
     }
     .nav-link {
-        @apply font-medium cursor-pointer text-white sm:text-black hover:text-gray-200;
+        @apply font-medium cursor-pointer sm:text-black md:text-black lg:text-white  hover:text-gray-200;
     }
     a{
         @apply cursor-pointer
