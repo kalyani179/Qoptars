@@ -4,13 +4,21 @@ import OurJourney from '../Home/OurJourney'
 import Footer from '../Home/Footer'
 import OurTeam from './OurTeam'
 import Advisors from './Advisors'
-import MissionVision from '../Home/MissionVision'
+import WelcomeSection from '../Home/WelcomeSection'
+import EarlyStory from './EarlyStory'
+import MissionVision from './MissionVision'
+import WhyChooseUs from './WhyChooseUs'
+import OurProducts from './OurProducts'
 
 const About = () => {
     return (
         <div>
             <Navbar />
+            <WelcomeSection />
+            <EarlyStory />
             <MissionVision />
+            <WhyChooseUs />
+            <OurProducts />
             <OurJourney />
             <OurTeam />
             <Advisors />

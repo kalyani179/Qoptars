@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { Fade } from "react-awesome-reveal";
 
 const milestones = [
     { year: "2020", title: "Founded Qoptars", description: "Built First Prototype and started working with initial users." },
@@ -13,23 +14,42 @@ const milestones = [
 
 const OurJourney = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const sectionRef = useRef(null); // Reference to the OurJourney component
 
     useEffect(() => {
-        // Trigger animation after component mounts
-        const timer = setTimeout(() => setIsVisible(true), 300); // Delay to ensure smoothness
-        return () => clearTimeout(timer);
+        // Intersection Observer to check when the component comes into view
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true); // Set visibility to true when in view
+                }
+            },
+            {
+                threshold: 0.1, // Trigger when 10% of the component is visible
+            }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current); // Observe the component
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current); // Clean up observer
+            }
+        };
     }, []);
 
     return (
         <section className="bg-white p-20">
-            <div className="container mx-auto px-6 text-center">
+            <div  ref={sectionRef} className="container mx-auto px-6 text-center">
                 <h2 className={`heading ${isVisible ? "fade-in" : "opacity-0"}`}>
                     Our Journey
                 </h2>
                 <p className={`caption ${isVisible ? "fade-in" : "opacity-0"} delay-200`}>
                     Milestones that mark our path of innovation and growth
                 </p>
-
+                <Fade triggerOnce={true}>
                 <div className="relative mt-20">
                     {/* Animated Vertical Line */}
                     <div
@@ -114,6 +134,7 @@ const OurJourney = () => {
                         ))}
                     </div>
                 </div>
+                </Fade>
             </div>
         </section>
     );

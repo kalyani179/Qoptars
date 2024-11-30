@@ -13,6 +13,9 @@
     .nav-link {
         @apply font-medium cursor-pointer text-white hover:text-gray-200;
     }
+    a{
+        @apply cursor-pointer
+    }
     .heading {
         @apply text-3xl font-bold text-neutral-950 leading-9
     }
@@ -120,3 +123,27 @@ body::-webkit-scrollbar {
 }
 
 
+/* Container settings */
+.auto-scroll-container {
+    position: relative;
+    overflow: hidden; /* Hides content outside the container */
+  }
+  
+  /* Scrolling content */
+  .auto-scroll-content {
+    position: absolute;
+    animation: scrollUp 30s linear infinite; /* Adjust duration for scroll speed */
+    top: 0; /* Start the content at the top */
+  }
+  
+  @keyframes scrollUp {
+    0% {
+      transform: translateY(10%); /* Start halfway into the container */
+    }
+    100% {
+      transform: translateY(-100%); /* Move entirely above the container */
+    }
+  }
+  
+  
+  

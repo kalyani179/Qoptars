@@ -25,7 +25,7 @@ const advisors = [
 
 const Advisors = () => {
     return (
-        <section className="bg-white py-20">
+        <section className="bg-white py-20 pt-10">
             <div className="container mx-auto px-6 text-center">
                 <h2 className="heading mb-12">Our Advisors</h2>
 
