@@ -11,25 +11,25 @@
         @apply font-inter tracking-wide;
     }
     .nav-link {
-        @apply font-medium cursor-pointer text-white hover:text-gray-200;
+        @apply font-medium cursor-pointer text-white sm:text-black hover:text-gray-200;
     }
     a{
         @apply cursor-pointer
     }
     .heading {
-        @apply text-3xl font-bold text-neutral-950 leading-9
+        @apply text-3xl sm:text-2xl font-bold text-neutral-950 leading-9
     }
     .caption {
-        @apply text-neutral-500 tracking-normal mt-3 max-w-2xl mx-auto text-center leading-relaxed
+        @apply sm:text-sm text-neutral-500 tracking-normal mt-3 max-w-2xl sm:max-w-xs mx-auto text-center leading-relaxed
     }
     .title {
-        @apply text-xl font-semibold mb-4
+        @apply text-xl sm:text-lg font-semibold mb-4
     }
     .description {
         @apply text-neutral-500 tracking-normal
     }
     .btn-black{
-        @apply bg-black text-white py-3 px-9 rounded-lg shadow hover:bg-gray-800 transition w-full md:w-auto;
+        @apply bg-black text-white py-3 px-9 sm:px-3 sm:py-2 rounded-lg shadow hover:bg-gray-800 transition w-full md:w-auto;
     }
     .center{
         @apply flex justify-center items-center 
