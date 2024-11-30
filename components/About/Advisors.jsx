@@ -31,7 +31,7 @@ const Advisors = () => {
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10">
                     {advisors.map((advisor, index) => (
-                        <div key={index} className="flex flex-col items-center space-y-3 text-center">
+                        <div key={index} className="flex flex-col justify-center items-center space-y-3 text-center">
                             {/* Advisor Image using Next.js Image component */}
                             <Image
                                 src={advisor.image}

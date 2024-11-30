@@ -39,22 +39,25 @@ const OurProducts = () => {
                     </p>
                 </Slide>
             </div>
-            <div className="center sm:flex-col justify-around space-x-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {products.map((product, index) => (
                     <Fade key={index} triggerOnce={true}>
-                        <div className="p-6 border bg-white rounded-lg shadow-md hover:shadow-lg transition">
-                            {/* Replace with Image component for SVG or other images */}
+                        <div
+                            className="p-6 flex flex-col items-center border bg-white rounded-lg shadow-md hover:shadow-lg transition h-full"
+                        >
                             <div className="mb-4">
                                 <Image
                                     src={product.icon}
                                     alt={`${product.title} Icon`}
-                                    width={40} 
-                                    height={40} 
+                                    width={60}
+                                    height={60}
                                     className="rounded"
                                 />
                             </div>
-                            <h3 className="title text-xl font-semibold">{product.title}</h3>
-                            <p className="description text-base opacity-80">{product.description}</p>
+                            <h3 className="title text-xl font-semibold text-center">{product.title}</h3>
+                            <p className="description text-base opacity-80 text-center">
+                                {product.description}
+                            </p>
                         </div>
                     </Fade>
                 ))}

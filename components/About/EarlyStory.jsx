@@ -4,7 +4,7 @@ import { Slide, Zoom } from "react-awesome-reveal";
 
 const EarlyStory = () => {
   return (
-    <div className="bg-white px-5 py-20">
+    <div className="bg-white px-5 sm:px-2 py-20 sm:py-5">
       <Zoom duration={2000} triggerOnce={true}>
         <h1
           className={`heading text-center`}
@@ -14,7 +14,7 @@ const EarlyStory = () => {
       </Zoom>
       <Slide direction="up" duration={1000} triggerOnce={true}>
         <div
-          className="text-base md:text-lg px-20 p-5 mt-7 text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-10"
+          className="text-base sm:text-sm md:text-lg px-20 p-5 mt-7 text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-10"
         >
           <p>
             Qoptars was founded in 2020, by its founders from their college
