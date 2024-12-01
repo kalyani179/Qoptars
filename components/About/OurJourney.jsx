@@ -41,7 +41,7 @@ const OurJourney = () => {
     }, []);
 
     return (
-        <section className="bg-white p-20 sm:px-3">
+        <section className="bg-white p-20 sm:px-0">
             <div  ref={sectionRef} className="container mx-auto px-6 text-center">
                 <h2 className={`heading ${isVisible ? "fade-in" : "opacity-0"}`}>
                     Our Journey
