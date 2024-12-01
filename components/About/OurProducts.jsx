@@ -27,7 +27,7 @@ const OurProducts = () => {
     ];
 
     return (
-        <div className="bg-neutral-100 p-20">
+        <div className="bg-neutral-100 p-20 sm:p-10">
             {/* Section Header */}
             <div className="container mx-auto text-center mb-12">
                 <Zoom triggerOnce={true}>

@@ -32,7 +32,7 @@ const Solutions = () => {
     ];
 
     return (
-        <div className="bg-neutral-100 p-20">
+        <div className="bg-neutral-100 p-20 sm:p-10">
             <div className="mx-auto text-center mb-12">
             <Zoom duration={1000} triggerOnce={true}>
                 <h2 className="heading">Our Solutions</h2>

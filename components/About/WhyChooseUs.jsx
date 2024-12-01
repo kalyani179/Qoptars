@@ -27,7 +27,7 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <div className="p-20">
+        <div className="p-20 sm:p-10">
             {/* Why Choose Us Title */}
             <div className="mx-auto text-center mb-12">
                 <Zoom duration={1000} triggerOnce={true}>

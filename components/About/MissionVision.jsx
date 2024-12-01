@@ -20,8 +20,8 @@ const MissionVision = () => {
     ];
 
     return (
-        <div className="bg-neutral-100 p-20">
-            <div className="bg-white mx-auto flex sm:flex-col gap-10">
+        <div className="bg-neutral-100 p-20 sm:p-10">
+            <div className="mx-auto flex sm:flex-col gap-10">
             {items.map((item, index) => (
                 <Slide
                     direction={index % 2 === 0 ? "left" : "right"}
@@ -29,7 +29,7 @@ const MissionVision = () => {
                     key={index} 
                 >
                     <div
-                        className="flex flex-col items-start p-6 border rounded-lg shadow-md hover:shadow-lg transition"
+                        className="bg-white flex flex-col items-start p-6 border rounded-lg shadow-md hover:shadow-lg transition"
                     >
                         <div className="relative w-12 h-12 mb-4">
                             <Image

@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <div className="bg-neutral-100 p-20">
+        <div className="bg-neutral-100 p-20 sm:p-10">
             <div className="container mx-auto text-center mb-12">
             <Zoom duration={1000} triggerOnce={true}>
                 <h2 className="heading">Why Choose Qoptars?</h2>

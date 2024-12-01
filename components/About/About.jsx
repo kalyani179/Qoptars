@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Home/Navbar'
-import OurJourney from '../Home/OurJourney'
+import OurJourney from './OurJourney'
 import Footer from '../Home/Footer'
 import OurTeam from './OurTeam'
 import Advisors from './Advisors'

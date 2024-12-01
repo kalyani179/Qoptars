@@ -41,7 +41,7 @@ const OurJourney = () => {
     }, []);
 
     return (
-        <section className="bg-white p-20">
+        <section className="bg-white p-20 sm:px-3">
             <div  ref={sectionRef} className="container mx-auto px-6 text-center">
                 <h2 className={`heading ${isVisible ? "fade-in" : "opacity-0"}`}>
                     Our Journey
@@ -126,9 +126,9 @@ const OurJourney = () => {
                                         index % 2 === 0 ? "ml-auto mr-0" : "ml-0 mr-auto"
                                     }`}
                                 >
-                                    <h3 className="text-lg font-semibold">{milestone.year}</h3>
-                                    <h4 className="text-md font-bold mt-2">{milestone.title}</h4>
-                                    <p className="text-gray-600 mt-1">{milestone.description}</p>
+                                    <h3 className="text-lg sm:text-base font-semibold">{milestone.year}</h3>
+                                    <h4 className="text-md sm:text-sm font-bold mt-2">{milestone.title}</h4>
+                                    <p className="sm:text-xs text-gray-600 mt-1">{milestone.description}</p>
                                 </div>
                             </div>
                         ))}

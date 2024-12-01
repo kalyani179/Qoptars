@@ -26,7 +26,7 @@ const testimonials = [
 
 const ClientSuccessStories = () => {
     return (
-        <div className="text-center p-20">
+        <div className="text-center p-20 sm:p-10">
         <Zoom triggerOnce={true}>
             <h2 className="heading">Client Success Stories</h2>
         </Zoom>

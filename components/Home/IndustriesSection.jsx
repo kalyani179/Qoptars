@@ -38,7 +38,7 @@ const IndustriesSection = () => {
     ];
 
     return (
-        <div className="bg-white p-20">
+        <div className="bg-white p-20 sm:p-10">
             <div className="container mx-auto text-center mb-12">
             <Zoom triggerOnce={true}>
                 <h2 className="heading">Transforming Industries with AI-Driven Drone Solution</h2>

@@ -7,7 +7,7 @@ import IndustriesSection from './IndustriesSection'
 import WhyChooseUs from './WhyChooseUs'
 import ClientSuccessStories from './ClientSuccessStories'
 import OurClients from './OurClients'
-import OurJourney from './OurJourney'
+import OurJourney from '../About/OurJourney'
 import Footer from './Footer'
 import InTheNewsSection from './InTheNewsSection'
 

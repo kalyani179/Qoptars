@@ -54,7 +54,7 @@ const OurClients = () => {
   ];
 
   return (
-    <div className="p-6 md:p-20 bg-neutral-100 text-center">
+    <div className="p-10 md:p-20 bg-neutral-100 text-center">
     <Zoom triggerOnce={true}>
       <h2 className="heading">Our Clients</h2>
     </Zoom>
