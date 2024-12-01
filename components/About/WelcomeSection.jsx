@@ -11,11 +11,11 @@ const WelcomeSection = () => {
       <div>
         <div className="center flex-col sm:gap-2 md:mt-9 sm:mt-6">
           <Zoom duration={2000} triggerOnce={true}>
-            <h1 className="heading mb-3">
+            <h1 className="heading mb-3 sm:mb-0">
               About Us
             </h1>
           </Zoom>
-            <div className="text-base mt-3 sm:text-sm md:text-lg px-5 sm:px-4 opacity-80 overflow-hidden h-64 w-[500px] sm:w-[260px] sm:h-48 auto-scroll-container">
+            <div className="text-base mt-3 sm:mt-2 sm:text-sm md:text-lg px-5 sm:px-4 opacity-80 overflow-hidden h-64 w-[500px] sm:w-[260px] sm:h-48 auto-scroll-container">
               <div className="auto-scroll-content">
                 <p>
                   Qoptars, a premier drone manufacturing company based in

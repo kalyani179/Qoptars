@@ -59,14 +59,14 @@ const OurClients = () => {
       <h2 className="heading">Our Clients</h2>
     </Zoom>
     <Slide direction='up' duration={1000} triggerOnce={true}>
-      <p className="caption">
+      <p className="caption pb-16">
         Trusted by leading organizations across industries
       </p>
       </Slide>
       {/* Carousel */}
       <Slider {...settings}>
         {clientLogos.map((logo) => (
-          <div key={logo.id} className="flex items-center justify-center pt-11 px-20">
+          <div key={logo.id} className="flex items-center justify-center px-20">
             <Image
               src={logo.src}
               alt={logo.alt}
